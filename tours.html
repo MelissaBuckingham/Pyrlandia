@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="Description"
+      content="A complete list of tours available from the tourism board of Trollheim"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pyrlandia Tours</title>
+    <style>
+      body {
+        background-image: url("images/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 id="logo">Visit Pyrlandia</h1>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="tours.html" class="active">Tours</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero-outer">
+      <img
+        src="images/fantasy-g39e22e176_1920.jpg"
+        id="hero-image"
+        alt="Photo of the Cave Region of Trollhiem"
+      />
+      <div id="cover-text">
+        <h2>Visit Pyrlandia</h2>
+        <h3>The land of myths and legends</h3>
+      </div>
+    </section>
+    <section>
+      <h2>Overnight Excursions</h2>
+      <div class="tour">
+        <p>
+          Overnight through the mountains to see the trendy city of Fallmoor.
+          This includes an overnight stay in one of the trendiest hotels in the
+          Guargone district of Fallmoor. -- Only 200.00 Monophi per person
+        </p>
+      </div>
+      <div class="tour">
+        <p>
+          Overnight tour to the historic city of Angorre. This tour includes
+          full board in a luxury 5 star hotel, transport to and from Phoenix.
+          And 2 guided tours totaling 6 hours worth of exciting informtion. --
+          Only 999.99 Monophi per person!
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Day Trips</h2>
+      <div class="tour">
+        <p>
+          Day trip to the sun and sea region. Pack lunch and dinner in a local
+          restaurant in Marnessa included. -- Only 150 Monophi per person
+        </p>
+      </div>
+      <div class="tour">
+        <p>
+          Day trip to Bankarna Falls. Includes the chance to try local cuisine
+          for both lunch and supper -- Only 275.00 Monophi per person.
+        </p>
+      </div>
+      <div class="tour">
+        <p>
+          Day out to the Gagodaan Beach on the west coast of the island, local
+          Pyrese style fish and chips included for lunch -- only 145.00 monophi
+          per person.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Walking Tours</h2>
+      <div class="tour">
+        <p>
+          2 hour Walking tour of The Senate Building -- only 30.00 Monophi per
+          person
+        </p>
+      </div>
+      <div class="tour">
+        <p>
+          4 hour vinyards of Tangodaan tour with wine tasting included. -- only
+          45.00 Monophi per person
+        </p>
+      </div>
+    </section>
+    <section>
+      <h3>All tours begin at the tourism office in the center of Phoenix.</h3>
+      <p>Address: 1736 Senate St. Phoenix. 66322. Telephone: 167-995-2663</p>
+    </section>
+    <form>
+      <h2>
+        Interested in joining one of our tours? Register your interest below.
+      </h2>
+      <label for="tour-drop-down">Choose your tour!</label>
+      <br />
+      <select id="tour-drop-down" name="tour_choice">
+        <option value="fallmoor">Overnight to Fallmoor - 200 m/p</option>
+        <option value="angorre">Overnight to Angorre - 999.99 m/p</option>
+        <option value="senate">
+          Walking Tour of the Senate Building - 30 m/p
+        </option>
+        <option value="tangodaan">Vinyards of Tangodaan Tour - 45 m/p</option>
+        <option value="marnessa">
+          Day Trip to Sun and Sea Region - 150 m/p
+        </option>
+        <option value="bankarna-falls">
+          Day Trip to Bankarna Falls - 275 m/p
+        </option>
+        <option value="beach">Day on Gagodaan Beach - 145 m/p</option>
+      </select>
+      <br />
+      <label for="number">How many people will be coming?</label>
+      <br />
+      <select id="number" name="number-people">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br />
+      <label for="when"> When would you like to join the tour?</label>
+      <br />
+      <input type="date" id="when" name="tour-date" />
+      <br />
+      <label for="fname">First Name</label>
+      <br />
+      <input type="text" id="fname" name="fname" />
+      <br />
+      <label for="lname">Last Name</label>
+      <br />
+      <input type="text" id="lname" name="lname" />
+      <br />
+      <label for="email">Email Address</label>
+      <br />
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="comments">Your Query</label>
+      <br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="40"
+        placeholder="Anything else you`d like to add? Do we need to make any adjustments in order to accommodate you or your party? Just write it all in here along with any other comments or queries and we´ll get back to you as soon as possible. We always try our best to accoodate any disabilities, but sometimes things are out of our control."
+      ></textarea>
+      <br />
+      <input type="submit" id="submit" name="submit" />
+      <input type="reset" id="reset" name="reset" />
+    </form>
+    <br />
+    <br />
+    <footer>
+      <ul class="social-networks">
+        <li>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fab fa-youtube-square"></i></a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
