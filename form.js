@@ -1,3 +1,7 @@
+function submit_form() {
+    alert("Thanks, we'll get back to you as soon as possible");
+}  
+
 function showMessage(input, message, type) {
     const msg = input.parentNode.querySelector("small");
     msg.innerText = message;
@@ -29,7 +33,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return true;
 }
 
-const form = document.querySelector("#signup");
+const form = document.getElementById("signup");
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
@@ -40,10 +44,11 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
 
-    let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+    let fnameValid = hasValue(form.elements["fname"], NAME_REQUIRED);
+    let lnameValid = hasValue(form.elements["lname"], NAME_REQUIRED);
     let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
 
-    if (nameValid && emailValid) {
+    if (fnameValid && lnameValid && emailValid) {
         alert("Demo only. No form was posted.");
     }
 });
