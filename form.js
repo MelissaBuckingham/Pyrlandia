@@ -1,6 +1,10 @@
+//give an alert after submission 
+
 function submit_form() {
-    alert("Thanks, we'll get back to you as soon as possible");
+    alert("Thanks for your interest in our tours, one of our reps will get back to you as soon as possible");
 }  
+
+//checks to see if all filds have been entered successfully 
 
 function showMessage(input, message, type) {
     const msg = input.parentNode.querySelector("small");
@@ -20,6 +24,9 @@ function hasValue(input, message) {
     }
     return showSuccess(input);
 }
+
+//checks if it is a valid email address
+
 function validateEmail(input, requiredMsg, invalidMsg) {
     if (!hasValue(input, requiredMsg)) {
         return false;
@@ -39,7 +46,7 @@ const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format";
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
@@ -49,6 +56,14 @@ form.addEventListener("submit", function (event) {
     let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
 
     if (fnameValid && lnameValid && emailValid) {
-        alert("Demo only. No form was posted.");
+        alert("This is just a demo, your details are safe.");
     }
+});
+
+//reset the form
+
+const formToReset = document.getElementById('signup');
+formToReset.addEventListener('submit', (e) => {
+   e.preventDefault();
+   formToReset.reset();
 });
