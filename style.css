@@ -5,7 +5,7 @@ p {
 }
 
 body {
-    background-color: pink;
+    background-color: rgb(192, 214, 255);
 }
 
 nav {
@@ -21,9 +21,9 @@ h3 {
 }
 
 #menu {
-    font-size: 110%;
+    font-size: 200%;
     list-style-type: none;
-    letter-spacing: 4px;
+    letter-spacing: 7px;
 }
 
 #logo,
@@ -50,15 +50,15 @@ h3 {
 }
 
 #hero-image {
-    height: 500px;
+    height: 100%;
     width: 100%;
     animation-name: hero-zoom;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
 }
 
 #hero-outer {
-    height: 500px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -70,7 +70,7 @@ h3 {
     }
 
     to {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
 }
 
