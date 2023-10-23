@@ -20,5 +20,5 @@ My site was deployed on github pages at https://melissabuckingham.github.io/Pyrl
 
 
 ## Credits
-I used the Love Running project for inspiration including the hero image inclusion and the responsiveness on smaler screened devices.
-I drew inspiration from geeksforgeeks.org, for the quiz section of the website. 
+I used the Love Running project for inspiration including for the hero image inclusion and the responsiveness on smaler screened devices.
+I drew inspiration from geeksforgeeks.org and sitepoint.com, for the quiz section of the website. 
