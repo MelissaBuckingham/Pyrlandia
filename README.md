@@ -13,6 +13,9 @@ I wanted to make the user experience as easy to use but at the same time making 
 
 ## Bugs and Testing
 
+There was a problem with the quiz.html not showing the script from quiz.js, and also showing the div above the headers , and also not showing the h1 heading. Trying to figure out what's gone on there...
+
+My Forms aren't quite working correctly , they are supposed to check whether the email entered is a valid email address, but they dont seem to be doing that...
 
 
 ## Deployment
