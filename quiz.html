@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<div class="panel">
-        <h1>Quiz Application Using JavaScript</h1>
-        <div class="question" id="ques"></div>
-        <div class="options" id="opt"></div>
-        <button onclick="checkAns()" id="btn">SUBMIT</button>
-        <div id="score"></div>
-        <script src="script.js"></script>
-    </div>, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="Description"
+      content="A Quiz about the Fantastical Realm of Pyrlandia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Magical Realm of Pyrlandia</title>
+    <style>
+      body {
+        background-image: url("images/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg");
+      }
+    </style>
 </head>
 <body>
-    
+    <div id="quiz"></div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+    <header>
+        <a href="#index.html">
+          <h1 id="logo">Visit Pyrlandia</h1>
+        </a>
+        <nav>
+          <ul id="menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="tours.html">Tours</a>
+            </li>
+            <li>
+                <a href="quiz.html" class="active">Quiz</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 </body>
 </html>
