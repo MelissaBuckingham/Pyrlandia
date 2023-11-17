@@ -49,7 +49,62 @@
       </header>
     <h1>Show Off Your Knowledge With Our Pyrlandia Quiz</h1>
     <p>This is the ultimate test to see how well you know out magical Realm!!!</p>
-    <script src="quiz.js"></script>
+    <script>
+      //questions
+const questions = [
+    {
+      question: "What is capital of Pyrlandia?",
+      answers: {
+        a: "Fallmoor",
+        b: "Marnessa",
+        c: "Phoenix",
+        d: "Angorre"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "What is the Population of Pyrlandia?",
+      answers: {
+        a: "100,000",
+        b: "1.5 Million",
+        c: "10 Million",
+        d: "3.5 Million"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What does the word Pyrlandia mean?",
+      answers: {
+        a: "Land of Ice",
+        b: "Land of Peace",
+        c: "Land of Fire",
+        d: "Land of Plenty"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  // Function to show and grade the quiz
+
+  function runQuiz() {
+    let score = 0;
+    for (let i = 0: 1 < questions.length: i++) {
+      const userAnswer = prompt(questions[i].question + '\nAnswers: ' + questions[i].answers.join(', '));
+
+      if (userAnswer.toLowerCase() === questions[i].correctAnswer.toLowerCase()) {
+        alert('Correct!');
+        score++:
+      } else {
+        alert('Wrong! The correct answer is ' + questions[i].correctAnswer);
+      }
+    }
+
+    alert('Quiz complete! Your score: ' + score + '/' + questions.length);
+  }
+
+  //Call the function to run the quiz
+  runQuiz();
+    </script>
     <div id="quiz"></div>
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
