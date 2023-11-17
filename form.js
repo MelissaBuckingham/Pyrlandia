@@ -27,17 +27,10 @@ function hasValue(input, message) {
 
 //checks if it is a valid email address
 
-function validateEmail(input, requiredMsg, invalidMsg) {
-    if (!hasValue(input, requiredMsg)) {
-        return false;
-    }
-    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    const email = input.value.trim();
-    if (!emailRegex.test(email)) {
-        return showError(input, invalidMsg);
-    }
-    return true;
+    return emailRegex.test(email);
 }
 
 const form = document.getElementById("signup");
