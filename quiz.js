@@ -90,7 +90,7 @@ function checkAns() {
 
 // Alternate way
 
-const quizContainer = document.getElementById('quiz');
+/*const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
@@ -170,7 +170,7 @@ function showResults(){
 buildQuiz();
 
 // on submit, show results
-submitButton.addEventListener('click', showResults);
+submitButton.addEventListener('click', showResults);*/
 
 //questions
 const myQuestions = [
@@ -205,3 +205,24 @@ const myQuestions = [
       correctAnswer: "c"
     }
   ];
+
+  // Function to show and grade the quiz
+
+  function runQuiz() {
+    let score = 0;
+    for (let i = 0: 1 < myQuestions.length: i++) {
+      const userAnswer = prompt(questions[i].question + '\nAnswers: ' + questions[i].answers.join(', '));
+
+      if (userAnswer.toLowerCase() === questions[i].correctAnswer.toLowerCase()) {
+        alert('Correct!');
+        score++:
+      } else {
+        alert('Wrong! The correct answer is ' + questions[i].correctAnswer);
+      }
+    }
+
+    alert('Quiz complete! Your score: ' + score + '/' + questions.length);
+  }
+
+  //Call the function to run the quiz
+  runQuiz();
