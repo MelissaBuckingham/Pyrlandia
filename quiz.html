@@ -25,89 +25,43 @@
     </style>
 </head>
 <body>
-    
-    <header>
-        <a href="#index.html">
-          <h1 id="logo">Visit Pyrlandia</h1>
-        </a>
-        <nav>
-          <ul id="menu">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="tours.html">Tours</a>
-            </li>
-            <li>
-                <a href="quiz.html" class="active">Quiz</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    <h1>Show Off Your Knowledge With Our Pyrlandia Quiz</h1>
-    <p>This is the ultimate test to see how well you know out magical Realm!!!</p>
-    <script>
-      //questions
-const questions = [
-    {
-      question: "What is capital of Pyrlandia?",
-      answers: {
-        a: "Fallmoor",
-        b: "Marnessa",
-        c: "Phoenix",
-        d: "Angorre"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "What is the Population of Pyrlandia?",
-      answers: {
-        a: "100,000",
-        b: "1.5 Million",
-        c: "10 Million",
-        d: "3.5 Million"
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "What does the word Pyrlandia mean?",
-      answers: {
-        a: "Land of Ice",
-        b: "Land of Peace",
-        c: "Land of Fire",
-        d: "Land of Plenty"
-      },
-      correctAnswer: "c"
-    }
-  ];
+  <div id="quiz-container">
+    <div class="question" id="question1">
+      <p>1. What is the capital of Pyrlamdia?</p>
+      <div class="options">
+          <label><input type="radio" name="q1" value="fallmoor"> Fallmoor</label>
+          <label><input type="radio" name="q1" value="marnessa"> Marnessa</label>
+          <label><input type="radio" name="q1" value="phoenix"> Phoenix</label>
+          <label><input type="radio" name="q1" value="angorre"> Angorre</label>
+      </div>
+    </div>
 
-  // Function to show and grade the quiz
+    <div class="question" id="question2">
+      <p>2. What is the Population of Pyrlandia?</p>
+      <div class="options">
+          <label><input type="radio" name="q1" value="100000"> 100,000</label>
+          <label><input type="radio" name="q1" value="1500000"> 1.5 Million</label>
+          <label><input type="radio" name="q1" value="10000000"> 10 Million</label>
+          <label><input type="radio" name="q1" value="3500000"> 3.5 Million</label>
+      </div>
+    </div>
 
-  function runQuiz() {
-    let score = 0;
-    for (let i = 0: 1 < questions.length: i++) {
-      const userAnswer = prompt(questions[i].question + '\nAnswers: ' + questions[i].answers.join(', '));
+    <div class="question" id="question3">
+      <p>3. What does the word Pyrlandia mean?</p>
+      <div class="options">
+          <label><input type="radio" name="q1" value="ice"> Land of Ice</label>
+          <label><input type="radio" name="q1" value="peace"> Land of Peace</label>
+          <label><input type="radio" name="q1" value="fire"> Land of Fire</label>
+          <label><input type="radio" name="q1" value="plenty"> Land of Plenty</label>
+      </div>
+    </div>
 
-      if (userAnswer.toLowerCase() === questions[i].correctAnswer.toLowerCase()) {
-        alert('Correct!');
-        score++:
-      } else {
-        alert('Wrong! The correct answer is ' + questions[i].correctAnswer);
-      }
-    }
+    <button onclick="submitQuiz()">Submit Quiz</button>
 
-    alert('Quiz complete! Your score: ' + score + '/' + questions.length);
-  }
+    <div id="result"></div>
+</div>
 
-  //Call the function to run the quiz
-  runQuiz();
-    </script>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
+<script src="quiz.js"></script>
     
 </body>
 </html>
