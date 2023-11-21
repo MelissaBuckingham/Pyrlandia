@@ -1,4 +1,4 @@
-//give an alert after submission 
+/*//give an alert after submission 
 
 function submit_form() {
     alert("Thanks for your interest in our tours, one of our reps will get back to you as soon as possible");
@@ -60,3 +60,29 @@ formToReset.addEventListener('submit', (e) => {
    e.preventDefault();
    formToReset.reset();
 });
+*/
+function validateForm() {
+    const firstName = document.getElementById("fname").value;
+    const lastName = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const comments = document.getElementById("comments").value;
+
+
+    const errorMessage = document.getElementById("errorMessage");
+    errorMessage.innerHTML = "";
+
+    if (!firstName || !lastName || !email || !comments) {
+        errorMessage.innerHTML = "All fields are required.";
+        return;
+    }
+
+    // Simple email validation using regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        errorMessage.innerHTML = "Enter a valid email address.";
+        return;
+    }
+
+    // If all validations pass, you can proceed with form submission or other actions
+    alert("Form submitted successfully!");
+}
