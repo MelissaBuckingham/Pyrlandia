@@ -140,8 +140,11 @@
           placeholder="Any questions or comments? Write them here!"
         ></textarea>
         <br />
-        <input type="submit" id="submit" name="submit" />
+        
         <input type="reset" id="reset" name="reset" />
+        <div class="error" id="errorMessage"></div>
+
+        <button type="button" onclick="validateForm()">Submit</button>
       </form>
         <script src="form.js"></script>
     </section>

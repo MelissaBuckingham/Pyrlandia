@@ -178,7 +178,9 @@
         We always try our best to accoodate any disabilities, but sometimes things are out of our control."
       ></textarea>
       <br />
-      <input type="submit" id="submit" name="submit" />
+      <div class="error" id="errorMessage"></div>
+
+        <button type="button" onclick="validateForm()">Submit</button>
       <input type="reset" id="reset" name="reset" />
     </form>
     <script src="form.js"></script>
