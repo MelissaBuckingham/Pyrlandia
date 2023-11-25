@@ -10,6 +10,15 @@ The purpose of this site is to provide prospective tourists and visitors the mai
 
 I wanted to make the user experience as easy to use but at the same time making the website unique and interesting to use. 
 
+WireFrame
+
+![Screenshots of the Wireframe](images/wireFrame.png "WireFrame")
+
+On the About page - and Tours page - there is a form which the user can fill in and once they press Submit there is a Javascript function which validates whether the details have been entered correctly, if so a success message is posted on a popup as seen below.
+
+![Screenshots of the Submitted PopUp](images/popup.png "Submitted PopUp")
+
+
 
 ## Bugs and Testing
 
