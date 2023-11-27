@@ -24,8 +24,18 @@ On the About page - and Tours page - there is a form which the user can fill in 
 
 There was a problem with the quiz.html not showing the script from quiz.js, and also showing the div above the headers , and also not showing the h1 heading. Trying to figure out what's gone on there...
 
-My Forms aren't quite working correctly , they are supposed to check whether the email entered is a valid email address, but they dont seem to be doing that...
+My Forms weren't quite working correctly , they were supposed to check whether the email entered is a valid email address, but they didnt seem to be doing that... so I simplified the code, and now it is working fine
 
+JS Lint
+
+Below is the result on JS Lint when I enter the Code from form.js:
+![Screenshots of the JS Lint test of form.js](images/formJsLint.png "JS Lint - form.js")
+
+And below is the result when I entered the code from quiz.js:
+![Screenshots of the JS Lint test of quiz.js](images/quizJsLint.png "JS Lint - quiz.js")
+3 Warnings were given, I spent some good time on stack overflow to see if other people had the same problem, and it seems like its a common occurrence and most people are saying it´s best just to ignore it, and seeing that it is a reqisite of p2.2 that i should have a loop, and also the wording saying there should be no "major" warnings I thought I could ignore it and put it down as a minor warning for the purpose of this excercise.
+
+I have used a mixture of manual testing and automated testing in the creation of this website, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
 
 ## Deployment
 My site was deployed on github pages at https://melissabuckingham.github.io/Pyrlandia/
