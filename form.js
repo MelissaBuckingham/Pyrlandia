@@ -61,6 +61,10 @@ formToReset.addEventListener('submit', (e) => {
    formToReset.reset();
 });
 */
+
+/*jslint browser:true */
+
+
 function validateForm() {
     const firstName = document.getElementById("fname").value;
     const lastName = document.getElementById("lname").value;
@@ -83,6 +87,6 @@ function validateForm() {
         return;
     }
 
-    // If all validations pass, you can proceed with form submission or other actions
-    alert("Form submitted successfully!");
+    // If all validations pass, proceed with form submission
+    window.alert("Form submitted successfully!");
 }
