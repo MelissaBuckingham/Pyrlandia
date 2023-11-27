@@ -37,6 +37,14 @@ And below is the result when I entered the code from quiz.js:
 
 I have used a mixture of manual testing and automated testing in the creation of this website, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
 
+W3 Validator
+![Screenshots of the W3 test of HTML](images/W3ValidatorHTML.png "W3 Validation HTML")
+I had a few trailing slashes which had no function but they are removed now.
+
+Jigsaw CSS Validation
+![Screenshots of the Jigsaw test of CSS](images/jigsaw.png "Jigsaw Validation CSS")
+No issues found at all.
+
 ## Deployment
 My site was deployed on github pages at https://melissabuckingham.github.io/Pyrlandia/
 
