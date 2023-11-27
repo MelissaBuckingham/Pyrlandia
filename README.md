@@ -22,7 +22,7 @@ On the About page - and Tours page - there is a form which the user can fill in 
 
 ## Bugs and Testing
 
-There was a problem with the quiz.html not showing the script from quiz.js, and also showing the div above the headers , and also not showing the h1 heading. Trying to figure out what's gone on there...
+There was a problem with the quiz.html not showing the script from quiz.js, and also showing the div above the headers , and also not showing the h1 heading. All sorted out now though
 
 My Forms weren't quite working correctly , they were supposed to check whether the email entered is a valid email address, but they didnt seem to be doing that... so I simplified the code, and now it is working fine
 
